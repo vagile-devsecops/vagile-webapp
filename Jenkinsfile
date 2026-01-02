@@ -9,7 +9,7 @@ pipeline {
         }
         stage('git'){
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rajukalyanit/kalyanit.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/']])
             }
         }
         stage('maven'){
