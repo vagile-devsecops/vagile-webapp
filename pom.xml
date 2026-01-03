@@ -32,7 +32,7 @@
     </dependencies>
 
     <build>
-	    i<finalName>vagile-webapp</finalName>
+	    <finalName>vagile-webapp</finalName>
         <plugins>
             <plugin>
 		    
