@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('SCM Checkout') {
             steps {
-                git (branch: 'main', url:'https://github.com/vagile-devsecops/vagile-webapp.git' )
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vagile-devsecops/vagile-webapp.git']])
             }
         }
         stage('maven build') {
